@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Price List</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #1a0b2e 0%, #2e1a47 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #ff0000;
+            border-radius: 50%;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .logo::before {
+            content: '✉️';
+            font-size: 24px;
+        }
+        .logo-text {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .contact-info span {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .contact-info .icon {
+            font-size: 20px;
+            vertical-align: middle;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #ff0000;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        td {
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        .note {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 14px;
+            color: #cccccc;
+        }
+        @media print {
+            body {
+                background: none;
+                padding: 20px;
+            }
+            .container {
+                max-width: 100%;
+            }
+            table {
+                background-color: transparent;
+            }
+            th {
+                background-color: #ff0000;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            th, td {
+                color: #000000;
+                border: 1px solid #000000;
+            }
+            .note {
+                color: #555555;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="logo-text">0xLcrgs</div>
+        <h1>0xLcrgs Pharmacy</h1>
+        <div class="subtitle">Your Trusted Source for Performance Enhancement - Available in EU</div>
+        <div class="contact-info">
+            <p><strong>Location:</strong> EU only</p>
+            <p><strong>Payment Methods:</strong> Crypto Only (BTC, XMR, USDC/USDT on ETH & SOL)</p>
+            <p><strong>Contact:</strong></p>
+            <span>Telegram: @xLcrgsPharma <span class="icon">💬</span></span>
+            <span>Email: 0xLcrgs@proton.me <span class="icon">✉️</span></span>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Dosage</th>
+                    <th>Quantity</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Mirabegron -->
+                <tr>
+                    <td>BETMIGA PR. 50MG/TAB BTX30 (BLISTERS 3x10)</td>
+                    <td>50MG/TAB</td>
+                    <td>30 TAB (1 BOX * 3 BLPK * 10 TAB)</td>
+                    <td>Astellas Pharma Europe B.V.</td>
+                    <td>$70</td>
+                </tr>
+                <!-- Testosterone Enanthate -->
+                <tr>
+                    <td>TESTOSTERONE ENANTHATE/NORMA INJ.SOL 250MG/ML BTX1 AMP x1 ML</td>
+                    <td>250mg (corresponds to 180mg Testosterone) per 1ml</td>
+                    <td>1 BOX * 1 AMP * 1 ML</td>
+                    <td>Norma Hellas A.E.</td>
+                    <td>$50</td>
+                </tr>
+                <!-- Pregabalin -->
+                <tr>
+                    <td>LYRICA CAPS 150MG/CAP BTX56(ΚΥΤ/ΕΑΗ/PVC/AL)</td>
+                    <td>150mg/CAP</td>
+                    <td>56 CAP (1 BOX * 4 BLPK * 14 CAP)</td>
+                    <td>Upjohn EESV</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td>PREGABALIN MYLAN CAPS 300MG/CAP BTX56 καψάκια σε BLISTER (PVC/PVDC/αλουμινίου)</td>
+                    <td>300MG/CAP</td>
+                    <td>56 CAP (1 BOX * 4 BLPK * 14 CAP)</td>
+                    <td>Mylan Pharmaceuticals Ltd</td>
+                    <td>$50</td>
+                </tr>
+                <!-- Phenobarbital -->
+                <tr>
+                    <td>GARDENAL TAB 100MG/TAB BTX20 (BLIST 1x20)</td>
+                    <td>100 mg/TAB</td>
+                    <td>20 TAB (1 BOX * 2 BLPK * 10 TAB)</td>
+                    <td>Atnahs Pharma Netherlands B.V.</td>
+                    <td>$10</td>
+                </tr>
+                <!-- Prednisolone -->
+                <tr>
+                    <td>ADELCORT TAB 5MG/TAB BTX30 (BLIST3x10) (PVC/ALU foil)</td>
+                    <td>5MG/TAB</td>
+                    <td>30 TAB (1 BOX * 3 BLPK * 10 TAB)</td>
+                    <td>Adelco Χρωματουργεία Αθηνών Α.Ε.</td>
+                    <td>$10</td>
+                </tr>
+                <!-- Quetiapine -->
+                <tr>
+                    <td>SEROQUEL F.C. TAB 25MG/TAB BTX60 (BLIST 6x10)</td>
+                    <td>25MG/TAB</td>
+                    <td>60 TAB (1 BOX * 6 BLPK * 10 TAB)</td>
+                    <td>Cheplapharm Arzneimittel GmbH</td>
+                    <td>$45</td>
+                </tr>
+                <!-- Propranolol -->
+                <tr>
+                    <td>INDERAL F.C. TAB 40MG/TAB BTX30 (BLIST 1x30)</td>
+                    <td>40MG/TAB</td>
+                    <td>30 TAB (1 BOX * 1 BLPK * 30 TAB)</td>
+                    <td>AstraZeneca</td>
+                    <td>$10</td>
+                </tr>
+                <!-- Dapoxetine -->
+                <tr>
+                    <td>PRILIGY F.C. TAB 60MG/TAB BTX6 (σε PVC/PE/PVDC/Alu Blister)</td>
+                    <td>60MG/TAB</td>
+                    <td>6 TAB (1 BOX * 1 BLPK * 6 TAB)</td>
+                    <td>Menarini</td>
+                    <td>$100</td>
+                </tr>
+                <!-- Cabergoline -->
+                <tr>
+                    <td>DOSTINEX TAB 0,5MG/TAB BT x 8 σε υαλοφ. ψυχρής πλ.</td>
+                    <td>0.5MG/TAB</td>
+                    <td>8 TAB (1 BOTTLE)</td>
+                    <td>Pfizer</td>
+                    <td>$50</td>
+                </tr>
+                <!-- Liothyronine (T3) -->
+                <tr>
+                    <td>T3 TAB 25MCG/TAB BTX30(BLIST2x15)</td>
+                    <td>25MCG/TAB</td>
+                    <td>30 TAB (1 BOX * 2 BLPK * 15 TAB)</td>
+                    <td>Generic</td>
+                    <td>$20</td>
+                </tr>
+                <!-- Insulin Aspart -->
+                <tr>
+                    <td>NOVORAPID FLEX PEN INJ.SOL 100 U/ML SPF SYR X3ML</td>
+                    <td>100 U/ML</td>
+                    <td>5 PENS * 3 ML</td>
+                    <td>Novo Nordisk</td>
+                    <td>$90</td>
+                </tr>
+                <!-- Exemestane -->
+                <tr>
+                    <td>AROMASIN C.TAB 25MG/TAB BTX30 (BLIST 2x15)</td>
+                    <td>25MG/TAB</td>
+                    <td>30 TAB (1 BOX * 2 BLPK * 15 TAB)</td>
+                    <td>Pfizer</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>EXEMESTANE/TEVA F.C. TAB 25MG/TAB BT x 30 (BLISTERS 3x10)</td>
+                    <td>25MG/TAB</td>
+                    <td>30 TAB (1 BOX * 3 BLPK * 10 TAB)</td>
+                    <td>Teva</td>
+                    <td>$70</td>
+                </tr>
+                <!-- Anastrozole -->
+                <tr>
+                    <td>ARMIDEX F.C. TAB 1MG/TAB BTX28 (BLIST 2x14 σε συσκευασία απο αλουμινίου)</td>
+                    <td>1MG/TAB</td>
+                    <td>28 TAB (1 BOX * 2 BLPK * 14 TAB)</td>
+                    <td>AstraZeneca</td>
+                    <td>$75</td>
+                </tr>
+                <!-- Insulin Lispro -->
+                <tr>
+                    <td>HUMALOG (KWIKPEN) INJ.SOL 100 U/ML BT x 5 PF PEN x 3ML, 3,5MG/ML</td>
+                    <td>100 U/ML</td>
+                    <td>5 PENS * 3 ML</td>
+                    <td>Eli Lilly</td>
+                    <td>$100</td>
+                </tr>
+                <!-- Semaglutide -->
+                <tr>
+                    <td>OZEMPIC INJ.SOL 0,5MG/0,37 (1syrpen) 1,34 MG/ML προγεμισμένη συσκευή τύπου πένας x 1,5 mL + 4 βελόνες</td>
+                    <td>0.5MG/0.37ML (1.34 MG/ML)</td>
+                    <td>1 PEN * 1.5 ML + 4 NEEDLES</td>
+                    <td>Novo Nordisk</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>OZEMPIC INJ.SOL 1MG/0,74 (1syrpen) 1,34 MG/ML προγεμισμένη συσκευή τύπου πένας x 3 mL + 4 βελόνες</td>
+                    <td>1MG/0.74ML (1.34 MG/ML)</td>
+                    <td>1 PEN * 3 ML + 4 NEEDLES</td>
+                    <td>Novo Nordisk</td>
+                    <td>$200</td>
+                </tr>
+                <!-- Tadalafil -->
+                <tr>
+                    <td>CIALIS F.C. TAB 5MG/TAB BT x 30</td>
+                    <td>5MG/TAB</td>
+                    <td>30 TAB (1 BOX)</td>
+                    <td>Eli Lilly</td>
+                    <td>$180</td>
+                </tr>
+                <!-- Isotretinoin -->
+                <tr>
+                    <td>REDUCAR SOFT CAPS 20MG/CAP BTX30 BLIST3x10</td>
+                    <td>20MG/CAP</td>
+                    <td>30 CAP (1 BOX * 3 BLPK * 10 CAP)</td>
+                    <td>Generic</td>
+                    <td>$30</td>
+                </tr>
+                <!-- Tamoxifen -->
+                <tr>
+                    <td>ZYMOPLEX F.C. TAB 20MG/TAB BT x 30</td>
+                    <td>20MG/TAB</td>
+                    <td>30 TAB (1 BOX)</td>
+                    <td>Generic</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>NOLVADEX D F.C. TAB 20MG/TAB BTX30 (BLIST 3x10)</td>
+                    <td>20MG/TAB</td>
+                    <td>30 TAB (1 BOX * 3 BLPK * 10 TAB)</td>
+                    <td>AstraZeneca</td>
+                    <td>$30</td>
+                </tr>
+                <!-- Levothyroxine (T4) -->
+                <tr>
+                    <td>T4 TAB 50MCG/TAB BTX30 (BLIST 3x10)</td>
+                    <td>50MCG/TAB</td>
+                    <td>30 TAB (1 BOX * 3 BLPK * 10 TAB)</td>
+                    <td>Generic</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>T4 TAB 200MCG/TAB BTX30 (BLIST 2X15)</td>
+                    <td>200MCG/TAB</td>
+                    <td>30 TAB (1 BOX * 2 BLPK * 15 TAB)</td>
+                    <td>Generic</td>
+                    <td>$10</td>
+                </tr>
+                <!-- Raloxifene -->
+                <tr>
+                    <td>EVISTA F.C. TAB 60MG/TAB BTX28 (BLISTERS)</td>
+                    <td>60MG/TAB</td>
+                    <td>28 TAB (1 BOX * 2 BLPK * 14 TAB)</td>
+                    <td>Eli Lilly</td>
+                    <td>$35</td>
+                </tr>
+                <!-- Dutasteride -->
+                <tr>
+                    <td>AVODART SOFT CAPS 0,5MG/CAP BTX30 (BLIST 3x10)</td>
+                    <td>0.5MG/CAP</td>
+                    <td>30 CAP (1 BOX * 3 BLPK * 10 CAP)</td>
+                    <td>GlaxoSmithKline (GSK)</td>
+                    <td>$35</td>
+                </tr>
+                <!-- Metformin -->
+                <tr>
+                    <td>GLUCOPHAGE F.C.TAB 850MG/TAB BTX30 (BLIST/PVC – ΑΛΟΥΜΙΝΙΟΥ)</td>
+                    <td>850MG/TAB</td>
+                    <td>30 TAB (1 BOX * 3 BLPK * 10 TAB)</td>
+                    <td>Merck</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>GLUCOPHAGE F.C.TAB 1000MG/TAB BT x 30 TAB σε BLISTER</td>
+                    <td>1000MG/TAB</td>
+                    <td>30 TAB (1 BOX * 3 BLPK * 10 TAB)</td>
+                    <td>Merck</td>
+                    <td>$10</td>
+                </tr>
+                <!-- Clomiphene Citrate -->
+                <tr>
+                    <td>CLOMIPHENE CITRATE/ANAGEN TAB 50MG/TAB BTX24</td>
+                    <td>50MG/TAB</td>
+                    <td>24 TAB (1 BOX * 2 BLPK * 12 TAB)</td>
+                    <td>Anagen</td>
+                    <td>$10</td>
+                </tr>
+                <!-- Finasteride -->
+                <tr>
+                    <td>PROSCAR F.C. TAB 5MG/TAB BTX14 ZL. BLISTERS</td>
+                    <td>5MG/TAB</td>
+                    <td>14 TAB (1 BOX * 1 BLPK * 14 TAB)</td>
+                    <td>Merck</td>
+                    <td>$10</td>
+                </tr>
+                <!-- Mesterolone -->
+                <tr>
+                    <td>PROVIRON TAB 25MG/ TAB x 20 BLIST ALU/PVC</td>
+                    <td>25MG/TAB</td>
+                    <td>20 TAB (1 BOX * 2 BLPK * 10 TAB)</td>
+                    <td>Bayer</td>
+                    <td>$10</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Note: Prices are set by the store. One price (for PROVIRON) is missing and marked as TBD. Contact local pharmacies, distributors, or regulatory authorities in Greece, such as the National Organization for Medicines, for further pricing guidance.</p>
+    </div>
+</body>
+</html>
